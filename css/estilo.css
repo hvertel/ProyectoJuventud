@@ -1,0 +1,199 @@
+body {
+  font-family: ubuntu;
+  font-size: 16px;
+}
+header {
+  background: #444;
+  color: #fff;
+  overflow: hidden;
+  padding: 0.5em;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+header .logo {
+  float: left;
+  width: 50px;
+}
+header .logo img {
+  width: 45px;
+}
+header .titular {
+  margin: 0px 50px 0 70px;
+}
+header .titular .titulo {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+header .escudo {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+}
+header .escudo .avatar {
+  margin: 0 0.5em 0 0;
+  position: relative;
+  z-index: 2;
+}
+header .escudo .avatar img {
+  width: 50px;
+  border-radius: 50%;
+}
+nav {
+  background: #fff;
+}
+nav .menu {
+  height: 45px;
+  line-height: 30px;
+  margin: 0;
+  overflow-x: auto;
+  padding: 0;
+  white-space: nowrap;
+  text-align: center;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+nav .menu li {
+  display: inline-block;
+}
+nav .menu li .inicio:hover {
+  border-bottom: 5px solid #4270a2;
+  color: #4270a2;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .inicio:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #4270a2;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 17px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li .nos:hover {
+  border-bottom: 5px solid #7d0cce;
+  color: #7d0cce;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .nos:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #7d0cce;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 32px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li .con:hover {
+  border-bottom: 5px solid #d80f80;
+  color: #d80f80;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .con:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #d80f80;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 46px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li .par:hover {
+  border-bottom: 5px solid #eb2340;
+  color: #eb2340;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .par:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #eb2340;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 33px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li .sed:hover {
+  border-bottom: 5px solid #fe7501;
+  color: #fe7501;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .sed:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #fe7501;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 19px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li .his:hover {
+  border-bottom: 5px solid #fcbf29;
+  color: #fcbf29;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .his:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #fcbf29;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 30px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li .contac:hover {
+  border-bottom: 5px solid #b7d400;
+  color: #b7d400;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+}
+nav .menu li .contac:hover:after {
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #b7d400;
+  border-right: 5px solid transparent;
+  content: "";
+  left: 44px;
+  rigth: 0;
+  position: absolute;
+  top: 25px;
+}
+nav .menu li a {
+  color: #7a7a7a;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 0.5em;
+  padding: 0 0.2em;
+  text-decoration: none;
+  text-align: center;
+}
+footer {
+  color: #7a7a7a;
+  padding: 1em 0;
+  text-align: center;
+  width: 100%;
+}
+footer h3 {
+  font-size: 14px;
+  font-weight: normal;
+}
+footer h3 strong {
+  display: block;
+}
