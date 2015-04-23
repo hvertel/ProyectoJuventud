@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalabe=no, initial-scale=1, maximum-scale=1">
 	<title>Oficina de Juventudes</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
@@ -12,30 +12,100 @@
 		<div class="logo">
 			<img src="imagenes/logo.png"/>
 		</div>
-		<div class="titular">
-			<h1 class="titulo">Oficina de la Juventud</h1>
+		<div class="boton_menu">
+			<a class="boton" href="#">Menú</a>
 		</div>
+		<nav>
+			<ul class="menu">
+				<li><a class="inicio" href="#">Inicio</a></li>
+				<li class="sub1">
+					<a class="nos" href="#">Nosotros</a>
+					<ul class="submenu">
+						<li><a href="#">¿Quienes Somos?</a></li>
+						<li><a href="#">Calendario de Eventos</a></li>
+						<li><a href="#">Folleto Informativo</a></li>
+						<li><a href="#">Video Informativo</a></li>
+						<li class="feria"><a href="#">Ferias internacionales en convenio</a></li>
+						<li><a href="#">Prensa</a></li>
+						<li><a href="#">Patrocinadores</a></li>
+					</ul>
+				</li>
+				<li><a class="con" href="#">Convocatoria</a></li>
+				<li class="sub2">
+					<a class="par" href="#">Participar</a>
+					<ul class="submenu2">
+						<li><a href="#">Convocatoria OJM 2014/2015</a></li>
+						<li><a href="#">Convocatoria OJM 2013/2014</a></li>
+					</ul>
+				</li>
+				<li><a class="sed" href="#">Sedes</a></li>
+				<li><a class="his" href="#">Historico</a></li>
+				<li><a class="contac" href="#">Contactenos</a></li>
+			</ul>
+		</nav>
 		<div class="escudo">
 			<figure class="avatar">
 				<img src="imagenes/rep1.png"/>
 			</figure>
 		</div>
 	</header>
-	<nav>
-		<ul class="menu">
-			<li><a class="inicio" href="#">Inicio</a></li>
-			<li><a class="nos" href="#">Nosotros</a></li>
-			<li><a class="con" href="#">Convocatoria</a></li>
-			<li><a class="par" href="#">Participar</a></li>
-			<li><a class="sed" href="#">Sedes</a></li>
-			<li><a class="his" href="#">Historico</a></li>
-			<li><a class="contac" href="#">Contactenos</a></li>
-		</ul>
-	</nav>
+	<!--<div class="sombra"><img src="imagenes/sombrita.png"></div>-->
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
+	<p>Ahora si comencemos a darle estilos a nuestro menú de navegación, primero que nada vamos a darle un 100% de tamaño para que el menú abarque todo el ancho del documento, después hacemos que el menú se quede fijo, el truco para que el menú de navegación se quede fijo en pantalla consiste en aplicarle una propiedad llamada position:fixed; a nuestro elemento del header.
+
+	Pero esto no es todo, también tenemos que agregar la propiedad z-index a nuestro header, con esto vamos a decirle que el menú se muestre por encima de los elementos como imágenes que se muestren en pantalla, que se muestren por debajo de nuestro menú si es que navegamos hacia abajo por la pagina, normalmente hay problemas con los slideshows, imágenes, videos, etc, para eso te recomiendo que le pongas un valor alto al z-index.
+
+	Y ya para finalizar la parte de nuestro header, le ponemos un fondo, el fondo que yo utilizo es un color negro con una opacidad, esto lo hago mediante colores rgba, los 3 primeros colores son rgb y el cuarto valor es el valor que le pondremos de opacidad.</p>
 	<footer>
 		<h3 class="powered">
 			<strong>Powered by hvertel</strong>
 		</h3>
 	</footer>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/menu.js"></script>
 </body>
 </html>

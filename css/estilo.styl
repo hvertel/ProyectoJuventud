@@ -1,33 +1,261 @@
 gris_texto = #7A7A7A
 gris_oscuro = #444
 
+@font-face {
+	font-family: 'iconos';
+	src:url('../fonts/icomoon.eot?-rgkyoh');
+	src:url('../fonts/icomoon.eot?#iefix-rgkyoh') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-rgkyoh') format('woff'),
+		url('../fonts/icomoon.ttf?-rgkyoh') format('truetype'),
+		url('../fonts/icomoon.svg?-rgkyoh#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body 
-	font-family ubuntu
+	font-family Century Gothic, CenturyGothic, AppleGothic, sans-serif
 	font-size 16px
 	
 header
-	background gris_oscuro
-	color white
-	overflow hidden
-	padding 0.5em
-	position relative
-	z-index 1
+	background white
+	box-shadow 0 2px 3px rgba(0, 0, 0, .3)
+	color #4171A2	
 	margin 0
+	padding 0.5em 0.5em 0.8em 0.5em
+	position fixed
+	text-align center
+	top 0
+	width 100%
 	
+	nav
+		background white
+		margin-right 100px	
+		.menu 
+			height 30px
+			list-style none
+			padding 0
+			margin 0					
+			li
+				display inline-block	
+				position relative
+				z-index 100
+				&:hover
+					.submenu
+						opacity 1
+						visibility visible
+						background white
+						z-index 100
+						border-top 5px solid #7C0CCA
+					.submenu2
+						opacity 1
+						visibility visible
+						background white
+						z-index 100
+						border-top 5px solid #FF2442
+													
+				.inicio:hover
+					border-bottom 5px solid #4171A2			
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative
+					transition reverse ease 1s
+					&:after
+						animation-duration 1s
+						amimation-name slidein
+						border-left 5px solid transparent
+						border-bottom 5px solid #4171A2
+						border-right 5px solid transparent
+						content ""
+						left 17px
+						rigth 0
+						position absolute
+						top 20px
+				.nos:hover
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative			
+					&:after
+						border-left 5px solid transparent
+						border-bottom 5px solid #7C0CCA
+						border-right 5px solid transparent
+						content ""
+						left 32px
+						rigth 0
+						position absolute
+						top 20px
+				.con:hover	
+					border-bottom 5px solid #CC0F81
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative
+					&:after
+						border-left 5px solid transparent
+						border-bottom 5px solid #CC0F81
+						border-right 5px solid transparent
+						content ""
+						left 46px
+						rigth 0
+						position absolute
+						top 20px
+				.par:hover
+					//border-bottom 5px solid #FF2442
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative
+					&:after
+						border-left 5px solid transparent
+						border-bottom 5px solid #FF2442
+						border-right 5px solid transparent
+						content ""
+						left 33px
+						rigth 0
+						position absolute
+						top 20px
+				.sed:hover
+					border-bottom 5px solid #FF7701
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative
+					&:after
+						border-left 5px solid transparent
+						border-bottom 5px solid #FF7701
+						border-right 5px solid transparent
+						content ""
+						left 19px
+						rigth 0
+						position absolute
+						top 20px
+				.his:hover
+					border-bottom 5px solid #FDBE2B
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative
+					&:after
+						border-left 5px solid transparent
+						border-bottom 5px solid #FDBE2B
+						border-right 5px solid transparent
+						content ""
+						left 30px
+						rigth 0
+						position absolute
+						top 20px
+				.contac:hover
+					border-bottom 5px solid #B7D400
+					color gris_texto
+					font-weight bold
+					text-decoration none
+					position relative
+					&:after
+						border-left 5px solid transparent
+						border-bottom 5px solid #B7D400
+						border-right 5px solid transparent
+						content ""
+						left 44px
+						rigth 0
+						position absolute
+						top 20px
+				a
+					color gris_texto
+					display inline-block
+					font-weight bold
+					height 25px
+					margin 0 0.3em
+					padding 0 0.2em	
+					position relative
+					text-decoration none
+					text-align center		
+			.submenu
+				box-shadow 0 3px 2px rgba(0, 0, 0, .2)
+				list-style none
+				margin 0
+				opacity 0
+				padding 0
+				position absolute
+				visibility hidden
+				width 100%
+				width 250px
+				&:after
+					border-left 5px solid transparent
+					border-bottom 5px solid #7C0CCA
+					border-right 5px solid transparent
+					content ""
+					left 37px
+					rigth 0
+					position absolute
+					top -10px
+				.feria
+					line-height 20px
+					
+				li
+					float left
+					width 250px
+					line-height 40px
+					height 40px
+					&:hover
+						background-color #C8BFE7
+						
+					a
+						display block
+						text-align left	
+						&:before
+							content "+"
+							margin 0 3px 0 0
+							padding 3px
+						&:hover
+							color #7C0CCA
+							argin-left 4px		
+			.submenu2
+				box-shadow 0 3px 2px rgba(0, 0, 0, .2)
+				list-style none
+				margin 0
+				opacity 0
+				padding 0
+				position absolute
+				visibility hidden
+				width 100%
+				width 200px
+				&:after
+					border-left 5px solid transparent
+					border-bottom 5px solid #FF2442
+					border-right 5px solid transparent
+					content ""
+					left 38px
+					rigth 0
+					position absolute
+					top -10px
+				li
+					float left
+					width 200px
+					line-height 20px
+					height 40px
+					&:hover
+						background-color #FFEBED
+					
+					a
+						display block
+						text-align left	
+						&:before
+							content "+"
+							margin 0 3px 0 0
+							padding 3px
+						&:hover
+							color #FF2442
+							argin-left 4px
+							
 	.logo 
 		float left
 		width 150px
 		img
 			width 130px
-	.titular
-		margin 0px 60px 0 140px
+	.boton_menu
+		display none
 		
-		.titulo
-			font-weight bold
-			font-size 17px
-			margin 0
-			padding 0
-			
 	.escudo 
 		position absolute
 		right 10px
@@ -39,140 +267,10 @@ header
 			z-index 2
 			img 
 				width 50px
-				border-radius 50%
-				
-			
-nav
-	background white
-	
-	.menu
-		height 50px
-		line-height 30px
-		margin 0
-		overflow-x auto
-		padding 0
-		white-space nowrap
-		text-align center
-		box-shadow 0 2px 3px rgba(0, 0, 0, .3)
-				
-		li
-			display inline-block
-			
-			.inicio:hover
-				border-bottom 5px solid #4270A2			
-				color #4270A2
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #4270A2
-					border-right 5px solid transparent
-					content ""
-					left 17px
-					rigth 0
-					position absolute
-					top 25px
-			.nos:hover
-				border-bottom 5px solid #7D0CCE
-				color #7D0CCE
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #7D0CCE
-					border-right 5px solid transparent
-					content ""
-					left 32px
-					rigth 0
-					position absolute
-					top 25px
-			.con:hover
-				border-bottom 5px solid #D80F80
-				color #D80F80
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #D80F80
-					border-right 5px solid transparent
-					content ""
-					left 46px
-					rigth 0
-					position absolute
-					top 25px
-			.par:hover
-				border-bottom 5px solid #EB2340
-				color #EB2340
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #EB2340
-					border-right 5px solid transparent
-					content ""
-					left 33px
-					rigth 0
-					position absolute
-					top 25px
-			.sed:hover
-				border-bottom 5px solid #FE7501
-				color #FE7501
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #FE7501
-					border-right 5px solid transparent
-					content ""
-					left 19px
-					rigth 0
-					position absolute
-					top 25px
-			.his:hover
-				border-bottom 5px solid #FCBF29
-				color #FCBF29
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #FCBF29
-					border-right 5px solid transparent
-					content ""
-					left 30px
-					rigth 0
-					position absolute
-					top 25px
-			.contac:hover
-				border-bottom 5px solid #B7D400
-				color #B7D400
-				font-weight bold
-				text-decoration none
-				position relative
-				&:after
-					border-left 5px solid transparent
-					border-bottom 5px solid #B7D400
-					border-right 5px solid transparent
-					content ""
-					left 44px
-					rigth 0
-					position absolute
-					top 25px
-				
-			a
-				color gris_texto
-				display inline-block
-				font-weight bold
-				margin 0 0.3em
-				padding 0 0.2em	
-				text-decoration none
-				text-align center
-			
+				border-radius 50%	
+p 
+	padding-top 80px
+	text-align justify			
 				
 footer
 	color gris_texto
@@ -184,15 +282,123 @@ footer
 	h3
 		font-size 14px
 		font-weight normal
-		
 		strong 
 			display block
-
-@media screen and (min-width: 768px)
+			
+@media screen and (max-width: 910px)
+	header
+		nav 
+			margin 0
 		
-	nav
-		.menu
-			height 36px
+		.escudo
+			display none
+		
+		.logo
+			display none
+		
+		.boton_menu
+			display none
+		
+@media screen and (max-width: 658px)
+	header
+		nav
+			background #023859
+			height 100%
+			left -100%
+			margin 0
+			position fixed
+			width 90%
+			overflow scroll
+			outline 0
+			color gris_texto
+			.menu
+				margin 0
+				padding 0
+				list-style none
+				li 
+					vertical-align middle
+					display list-item
+					border-bottom 1px solid rgba(255, 255, 255, .3)
+					&:hover
+						background 	white
+						color gris_texto
+						.submenu
+							display block
+							background #011826
+							position relative
+							width 150%
+							z-index 1000
+							&:hover
+								display none
+							li 
+								display block
+								overflow hidden
+								border-bottom 1px solid rgba(255, 255, 255, .5)
+								a
+									margin-left 20px
+								
+						.submenu2
+							display none
+							background #011826
+							position relative
+							width 150%
+							z-index 1000
+							&:hover
+								display none
+							li 
+								display block
+								overflow hidden
+								border-bottom 1px solid rgba(255, 255, 255, .5)
+								a
+									margin-left 20px
+					.inicio:hover
+						border-bottom 0
+					.con:hover
+						border-bottom 0
+					.par:hover
+						border-bottom 0
+					.sed:hover
+						border-bottom 0
+					.his:hover
+						border-bottom 0
+					.contac:hover
+						border-bottom 0
+					a
+						color white
+						display block
+						padding 20px
+					.submenu
+						width 100%
+						position relative	
+							a
+								margin-left 20px
+					.submenu2
+						width 100%
+						position relative
+							a
+								margin-left 20px	
+		.boton_menu 
+			display block
+			width 80%
+			background #ccc
+			.boton
+				display block
+				padding 20px
+				background #024959
+				color #fff
+				text-decoration none
+				font-weight bold
+				text-align right	
+	.sombra
+		position fixed
+		top 50px
+		left 70px
+		margin 0
+		img
+			width 100%
+			opacity 0.5
+			background rgba(255, 255, 255, .75)
+		
 			
 	
 		
